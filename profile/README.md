@@ -1,8 +1,8 @@
 # Mini Goose
 
 <p align="center">
-  <a href="media/ryan.mp4"><img src="media/ryan_the_gosling.png" alt="Ryan the Gosling, the Mini Goose robot" width="700"></a>
-  <br><em>▶ <a href="media/ryan.mp4">Watch the promo video</a> (1:28)</em>
+  <a href="https://youtu.be/AIFguQTIFXE"><img src="media/ryan_the_gosling.png" alt="Ryan the Gosling, the Mini Goose robot" width="700"></a>
+  <br><em>▶ <a href="https://youtu.be/AIFguQTIFXE">Watch the promo video on YouTube</a> (1:28)</em>
 </p>
 
 
