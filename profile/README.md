@@ -176,6 +176,11 @@ The clip at the top of this page ([MP4](media/balance_desk_sim_comp.mp4)) shows 
   <br><em>Forward run on the real robot: default policy (left) vs. policy trained without randomization (right), which oscillates throughout.</em>
 </p>
 
+## Future work
+
+- **Redesign the 3D model for buttons and LEDs.** Add mounts for physical buttons and status LEDs to the chassis, so the robot can be started, stopped and calibrated, and can show its state, without opening the browser interface. 
+- **Design a PCB.** Turn the [KiCad schematic](#1-the-robot) into a custom PCB that replaces the current wiring and holds the ESP32-S3, motor driver and buck converter.
+
 ---
 
 ## Repository layout
