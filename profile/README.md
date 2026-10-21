@@ -158,26 +158,38 @@ The clip at the top of this page ([MP4](media/balance_desk_sim_comp.mp4)) shows 
 ---
 
 ## Results
-TODO: add results
 
+<p align="center">
+  <img src="media/balancing_forward_results.png" alt="Results tables for the balancing experiment (zero velocity command) and the forward experiment (linear velocity command): falls, linear velocity, angular velocity and pitch-rate RMSE, mean action and saturation for the robot, clean simulation and noisy simulation, under default, no and more randomization" width="900">
+  <br><em>Balancing (zero velocity command) and forward driving (linear velocity command).</em>
+</p>
+
+
+<p align="center">
+  <img src="media/spin_slope_results.png" alt="Results tables for the spin experiment (angular velocity command) and the slope experiment (ramp, robot only): falls, tracking RMSE, mean action and saturation under default, no and more randomization" width="900">
+  <br><em>Spinning in place (angular velocity command) and driving up a ramp (robot only).</em>
+</p>
+
+
+<p align="center">
+  <img src="media/forward_default_noRando_results.png" alt="Two robot logs of the forward experiment side by side, each showing velocity command, tilt, body rates and wheel velocity. Left, default policy: pitch stays within a few degrees and wheel speed holds steady during the forward command. Right, policy trained without randomization: pitch oscillates by about ±15 degrees and the wheels swing back and forth throughout the run" width="900">
+  <br><em>Forward run on the real robot: default policy (left) vs. policy trained without randomization (right), which oscillates throughout.</em>
+</p>
 
 ---
 
-## Lessons learned
-
-TODO: add lessons
-
 ## Repository layout
 
-This folder groups the project's separate repositories, all under the [MiniGooseTM](https://github.com/MiniGooseTM) GitHub organization.
+The project is split into separate repositories in this organization.
 
-| Folder | Contents |
+| Repository | Contents |
 |---|---|
-| [`hardware-design/`](hardware-design/README.md) | Fusion 360 CAD, printable STLs, KiCad schematic and PCB, [bill of materials](hardware-design/bom.md) |
-| [`software_stack/`](software_stack/README.md) | MuJoCo model, MJX environment, Brax PPO training, curriculum, evaluation, teleop, export. See also [`ARCHITECTURE.md`](software_stack/ARCHITECTURE.md) and [`REWARDS.md`](software_stack/REWARDS.md). |
-| [`ESP32_software/`](ESP32_software/robot/README.md) | ESP-IDF firmware: control loop, policy runtime, IMU and motor drivers, web interface |
-| [`data_analysis/`](data_analysis/README.md) | Log plotting, real-vs-sim comparison, evaluation metrics, scripted replays, experiment logs  
-| [`documentation/`](documentation/) | Project proposal and development notes |
+| [`hardware-design`](https://github.com/MiniGooseTM/hardware-design) | Fusion 360 CAD, printable STLs, KiCad schematic and PCB, [bill of materials](https://github.com/MiniGooseTM/hardware-design/blob/main/bom.md) |
+| [`software_stack`](https://github.com/MiniGooseTM/software_stack) | MuJoCo model, MJX environment, Brax PPO training, curriculum, evaluation, teleop, export. See also [`ARCHITECTURE.md`](https://github.com/MiniGooseTM/software_stack/blob/main/ARCHITECTURE.md) and [`REWARDS.md`](https://github.com/MiniGooseTM/software_stack/blob/main/REWARDS.md). |
+| [`ESP32_software`](https://github.com/MiniGooseTM/ESP32_software) | ESP-IDF firmware: control loop, policy runtime, IMU and motor drivers, web interface ([`robot/README.md`](https://github.com/MiniGooseTM/ESP32_software/blob/main/robot/README.md)) |
+| [`data_analysis`](https://github.com/MiniGooseTM/data_analysis) | Log plotting, real-vs-sim comparison, evaluation metrics, scripted replays, experiment logs |
+| [`media`](https://github.com/MiniGooseTM/media) | Video clips of the real robot: figure-eights, ramps and slopes, cobblestone, grass, a skateboard, pushes and carrying a cube (stored with Git LFS) |
+| [`documentation`](https://github.com/MiniGooseTM/documentation) | Project proposal and development notes |
 
 ## Quick start
 
